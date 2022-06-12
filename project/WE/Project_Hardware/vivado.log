@@ -1,0 +1,820 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 19 00:45:40 2020
+# Process ID: 9900
+# Current directory: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15504 C:\Users\Amos Chan\Documents\EE4218\Labs\Project\WE\Project_Hardware\Project_Hardware.xpr
+# Log file: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/vivado.log
+# Journal file: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/USER/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4700-USER-PC/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 729.887 ; gain = 94.953
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jun 19 00:46:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jun 19 00:56:51 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jun 19 01:01:32 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jun 19 01:11:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.runs/synth_1/runme.log
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/AmosChan/Documents/EE4218/Labs/Project/input.mem
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jun 19 02:30:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Jun 19 02:42:17 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:450]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:450]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Amos -notrace
+couldn't read file "C:/Users/Amos": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 19 03:05:28 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1185.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_myip_v1_0_behav -key {Behavioral:sim_1:Functional:tb_myip_v1_0} -tclbatch {tb_myip_v1_0.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_myip_v1_0.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Loading Memory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_myip_v1_0_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1185.508 ; gain = 0.000
+run all
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_myip_v1_0/U1}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Loading Memory.
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:450]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:450]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run all
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run all
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run all
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run all
+export_ip_user_files -of_objects  [get_files {{C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Project/input.mem}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Project/input.mem}}
+file delete -force {C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Project/input.mem}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/AmosChan/Documents/EE4218/Labs/Project/input.mem
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:451]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run all
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:455]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:455]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5000 ns
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:457]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:457]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run 80000 ns
+run 10000 ns
+run 10000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:457]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:457]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run 80000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:457]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:457]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run 80000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_myip_v1_0' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_result_expected.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/test_input.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/input.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_myip_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myip_v1_0
+INFO: [VRFC 10-2458] undeclared symbol A_read_data1_out, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:452]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiply
+INFO: [VRFC 10-2458] undeclared symbol element_rdy, assumed default net type wire [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_layer_mat_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_myip_v1_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim'
+"xelab -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9f357a01c251422da32aa02908e9e12d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_myip_v1_0_behav xil_defaultlib.tb_myip_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'A_read_data_out' [C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v:452]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.memory_RAM(depth_bits=9)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=3)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=6)
+Compiling module xil_defaultlib.memory_RAM(depth_bits=8)
+Compiling module xil_defaultlib.matrix_multiply(A_depth_bits=9,B...
+Compiling module xil_defaultlib.sigmoid_function(A_depth_bits=6,...
+Compiling module xil_defaultlib.output_layer_mat_mult(A_depth_bi...
+Compiling module xil_defaultlib.myip_v1_0_default
+Compiling module xil_defaultlib.tb_myip_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_myip_v1_0_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Loading Memory.
+WARNING: Too many words specified in data file test_result_expected.mem
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1207.746 ; gain = 0.000
+run 80000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 19 04:37:27 2020...

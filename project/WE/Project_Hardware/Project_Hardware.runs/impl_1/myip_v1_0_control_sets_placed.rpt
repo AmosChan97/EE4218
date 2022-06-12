@@ -1,0 +1,111 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jun 19 20:51:56 2020
+| Host         : NavyLightning running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file myip_v1_0_control_sets_placed.rpt
+| Design       : myip_v1_0
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |    11 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             142 |           46 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              97 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------------------------------------+----------------------------------------------+------------------+----------------+
+|   Clock Signal  |                  Enable Signal                 |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-----------------+------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  ACLK_IBUF_BUFG | matrix_multiply_0/state[3]_i_1_n_0             |                                              |                1 |              4 |
+|  ACLK_IBUF_BUFG | matrix_multiply_1/state[3]_i_1__0_n_0          |                                              |                2 |              4 |
+|  ACLK_IBUF_BUFG | nr_of_b2_reads[3]_i_1_n_0                      |                                              |                1 |              4 |
+|  ACLK_IBUF_BUFG | output_layer1/state_reg[3][0]                  | state[4]_i_1_n_0                             |                2 |              5 |
+|  ACLK_IBUF_BUFG | nr_of_b1_reads[3]_i_1_n_0                      |                                              |                2 |              5 |
+|  ACLK_IBUF_BUFG | nr_of_writes[5]_i_1__1_n_0                     | state[4]_i_1_n_0                             |                3 |              6 |
+|  ACLK_IBUF_BUFG | sigmoid_function_1/state                       |                                              |                2 |              6 |
+|  ACLK_IBUF_BUFG | sigmoid_function_2/E[0]                        |                                              |                2 |              6 |
+|  ACLK_IBUF_BUFG | matrix_multiply_1/state_reg[0]_1[0]            | matrix_multiply_1/nr_of_writes[5]_i_1__0_n_0 |                1 |              6 |
+|  ACLK_IBUF_BUFG | matrix_multiply_0/E[0]                         | matrix_multiply_0/nr_of_writes[5]_i_1_n_0    |                1 |              6 |
+|  ACLK_IBUF_BUFG | nr_of_sig_reads[7]_i_2_n_0                     | nr_of_sig_reads[7]_i_1_n_0                   |                3 |              7 |
+|  ACLK_IBUF_BUFG | B1_write_data_in[7]_i_1_n_0                    |                                              |                2 |              8 |
+|  ACLK_IBUF_BUFG | weight1[7]_i_1_n_0                             |                                              |                6 |              8 |
+|  ACLK_IBUF_BUFG | sigmoid_function_1/A_write_en                  |                                              |                2 |              8 |
+|  ACLK_IBUF_BUFG | weight2[7]_i_1_n_0                             |                                              |                4 |              8 |
+|  ACLK_IBUF_BUFG | w_bias[7]_i_1_n_0                              |                                              |                2 |              8 |
+|  ACLK_IBUF_BUFG | B2_write_data_in[7]_i_1_n_0                    |                                              |                1 |              8 |
+|  ACLK_IBUF_BUFG | RES_read_en_reg_n_0                            |                                              |                3 |              8 |
+|  ACLK_IBUF_BUFG | nr_of_a_reads[8]_i_2_n_0                       | nr_of_a_reads[8]_i_1_n_0                     |                3 |              8 |
+|  ACLK_IBUF_BUFG | nr_of_reads[10]_i_2_n_0                        | nr_of_reads[10]_i_1_n_0                      |                4 |              9 |
+|  ACLK_IBUF_BUFG | matrix_multiply_1/A_read_address[8]_i_1__0_n_0 | matrix_multiply_1/nr_of_writes[5]_i_1__0_n_0 |                2 |              9 |
+|  ACLK_IBUF_BUFG | matrix_multiply_0/A_read_address[8]_i_1_n_0    | matrix_multiply_0/nr_of_writes[5]_i_1_n_0    |                2 |              9 |
+|  ACLK_IBUF_BUFG | sigmoid_function_2/A_write_en                  |                                              |                3 |             12 |
+|  ACLK_IBUF_BUFG | output_layer1/write_en                         |                                              |                3 |             12 |
+|  ACLK_IBUF_BUFG | B1_read_en                                     |                                              |                4 |             16 |
+|  ACLK_IBUF_BUFG | output_layer1/E[0]                             |                                              |                5 |             16 |
+|  ACLK_IBUF_BUFG | B1_write_en_reg_n_0                            |                                              |                2 |             16 |
+|  ACLK_IBUF_BUFG | B2_write_en_reg_n_0                            |                                              |                2 |             16 |
+|  ACLK_IBUF_BUFG | matrix_multiply_0/sum[15]_i_2_n_0              | matrix_multiply_0/sum[15]_i_1_n_0            |                4 |             16 |
+|  ACLK_IBUF_BUFG | sig_write_address[7]_i_1_n_0                   |                                              |                4 |             16 |
+|  ACLK_IBUF_BUFG | matrix_multiply_1/sum[15]_i_2__0_n_0           | matrix_multiply_1/sum[15]_i_1__0_n_0         |                4 |             16 |
+|  ACLK_IBUF_BUFG | A_write_address[8]_i_1_n_0                     |                                              |                5 |             17 |
+|  ACLK_IBUF_BUFG |                                                |                                              |               19 |             34 |
++-----------------+------------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v" \
+"../../../../Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v" \
+"../../../../Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v" \
+"../../../../Project_Hardware.srcs/sources_1/new/sigmoid_function.v" \
+"../../../../Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v" \
+"../../../../Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

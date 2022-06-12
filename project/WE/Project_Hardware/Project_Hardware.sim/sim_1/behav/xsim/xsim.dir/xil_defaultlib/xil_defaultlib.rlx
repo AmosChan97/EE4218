@@ -1,0 +1,11 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v,1592553356,verilog,,,,tb_myip_v1_0,,,,,,,,
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v,1592553397,verilog,,C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v,,matrix_multiply,,,,,,,,
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/memory_RAM.v,1592553397,verilog,,C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v,,memory_RAM,,,,,,,,
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/myip_v1_0.v,1592557522,verilog,,C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/imports/Lab1/matrix_multiply.v,,myip_v1_0,,,,,,,,
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v,1592557072,verilog,,C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Lab1/tb_myip_v1_0.v,,output_layer_mat_mult,,,,,,,,
+C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v,1592555451,verilog,,C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v,,sigmoid_function,,,,,,,,

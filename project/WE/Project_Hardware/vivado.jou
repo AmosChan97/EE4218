@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 19 00:45:40 2020
+# Process ID: 9900
+# Current directory: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15504 C:\Users\Amos Chan\Documents\EE4218\Labs\Project\WE\Project_Hardware\Project_Hardware.xpr
+# Log file: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/vivado.log
+# Journal file: C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.xpr}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/AmosChan/Documents/EE4218/Labs/Project/input.mem
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source tb_myip_v1_0.tcl
+run all
+current_wave_config {Untitled 1}
+add_wave {{/tb_myip_v1_0/U1}} 
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+export_ip_user_files -of_objects  [get_files {{C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Project/input.mem}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Project/input.mem}}
+file delete -force {C:/Users/Amos Chan/Documents/EE4218/Labs/Project/WE/Project_Hardware/Project_Hardware.srcs/sim_1/imports/Project/input.mem}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/AmosChan/Documents/EE4218/Labs/Project/input.mem
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+restart
+run all
+restart
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+run 5000 ns
+relaunch_sim
+run 80000 ns
+run 10000 ns
+run 10000 ns
+relaunch_sim
+run 80000 ns
+relaunch_sim
+run 80000 ns
+relaunch_sim
+run 80000 ns
+close_sim

@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 18 14:35:55 2020
+# Process ID: 4700
+# Current directory: C:/Users/USER/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11604
+# Log file: C:/Users/USER/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/USER/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.xpr
+file mkdir D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new
+close [ open D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v w ]
+add_files D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/sigmoid_function.v
+close [ open D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat.mult w ]
+add_files D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat.mult
+set_property file_type Verilog [get_files  D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat.mult]
+add_files -norecurse -scan_for_includes D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat_mult.v
+export_ip_user_files -of_objects  [get_files D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat.mult] -no_script -reset -force -quiet
+remove_files  D:/Downloads/School/Y2S2/EE4218/Project_Hardware/Project_Hardware.srcs/sources_1/new/output_layer_mat.mult
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+archive_project D:/Downloads/School/Y2S2/EE4218/Project_Hardware.xpr.zip -temp_dir C:/Users/USER/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4700-USER-PC -force -include_local_ip_cache -include_config_settings
